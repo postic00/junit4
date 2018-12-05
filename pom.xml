@@ -484,6 +484,17 @@
 				<artifactId>jdepend-maven-plugin</artifactId>
 				<version>2.0</version>
 			</plugin>
+			
+			<!-- JavaNCSS Plugin -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>javancss-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<ccnLimit>15</ccnLimit>
+					<ncssLimit>80</ncssLimit>
+				</configuration>
+			</plugin>
         </plugins>
     </reporting>
 
